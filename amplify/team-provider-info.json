@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-laboratoireaws-dev-f3d56-authRole",
+      "UnauthRoleArn": "arn:aws:iam::897722689920:role/amplify-laboratoireaws-dev-f3d56-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::897722689920:role/amplify-laboratoireaws-dev-f3d56-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-laboratoireaws-dev-f3d56-deployment",
+      "UnauthRoleName": "amplify-laboratoireaws-dev-f3d56-unauthRole",
+      "StackName": "amplify-laboratoireaws-dev-f3d56",
+      "StackId": "arn:aws:cloudformation:us-east-2:897722689920:stack/amplify-laboratoireaws-dev-f3d56/a0c056c0-b8f6-11ef-ba2b-06dfd094c487",
+      "AmplifyAppId": "d3ruv635jhgsn2"
+    },
+    "categories": {
+      "auth": {
+        "laboratoireaws06823a5e": {}
+      }
+    }
+  }
+}
