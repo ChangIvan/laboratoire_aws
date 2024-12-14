@@ -10,7 +10,6 @@ function App({signOut}) {
   const [btnPopup, setBtnPopup] = useState(false);
   const [btnPopup2, setBtnPopup2] = useState(false);
   const [id, setId] = useState("");
-  const [image, setImage] = useState(null);
 
   useEffect(() => {
     async function fetchRecettes() {
@@ -40,8 +39,7 @@ function App({signOut}) {
       nom: data.nom,
     };
 
-    //createRecette(newRecette);
-    createOrUpdateRecetteAvecImage(newRecette, image)
+    createRecette(newRecette);
   }
  
   const supprimer = (id) => {
@@ -61,10 +59,6 @@ function App({signOut}) {
 
     updateRecette(newRecette);
   }
-
-  const handleFileChange = (event) => {
-    setImage(event.target.files[0]);
-  };
 
 
   return ( 
@@ -89,7 +83,6 @@ function App({signOut}) {
               <input type="id" name="id"></input>
               <label>Nom de la recette</label>
               <input type="nom" name="nom"></input>
-              <input type="file" onChange={handleFileChange}/>
               <button type="submit">Ajouter</button>
             </form>
       </Popup>

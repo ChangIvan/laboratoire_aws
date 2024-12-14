@@ -28,30 +28,3 @@ export const deleteRecette = async (id) => {
   return response.data;
 };
 
-export const createOrUpdateRecetteAvecImage = async (recette, image) => {
-  const formData = new FormData();
-  formData.append('id', recette.id);
-  formData.append('nom', recette.nom);
-  if (image) {
-    formData.append('imageName', image.name);
-    formData.append('file', image);
-  }
-
-
-  const response = await axios.put(`${API_URL}/recettes`, formData, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
-
-  return response.data;
-}
-
-const imageToBase64 = (image) => { 
-  return new Promise((resolve, reject) => { 
-    const reader = new FileReader(); 
-    reader.readAsDataURL(image); 
-    reader.onload = () => resolve(reader.result.split(',')[1]); 
-    reader.onerror = error => reject(error); 
-  }); 
-};
