@@ -6,7 +6,9 @@
     "@aws-amplify/cli": "^12.13.1",
     "@aws-amplify/ui-react": "^6.7.1",
     "aws-amplify": "^6.10.3",
+    "axios": "^1.7.9",
     "cra-template": "1.2.0",
+    "multiparty": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
